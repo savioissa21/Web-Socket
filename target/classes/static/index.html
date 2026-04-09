@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento Climático Real-Time</title>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Monitoramento Climático <span class="badge" id="statusBadge">Desconectado</span></h1>
+            <p>Os dados são atualizados em tempo real do nosso servidor (sem polling).</p>
+        </header>
+
+        <main>
+            <div id="cardsContainer" class="cards-grid">
+                <!-- Os cards de clima aparecerão aqui dinamicamente -->
+            </div>
+        </main>
+    </div>
+
+    <!-- SockJS & STOMP -->
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
