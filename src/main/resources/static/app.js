@@ -43,12 +43,12 @@ function setConnected(connected) {
 function updateDashboard(data) {
     const cityId = data.cidade.replace(/\s+/g, '-').toLowerCase();
     
-    // Define the theme based on temperature
-    let themeClass = 'mild';
-    if (data.temperatura < 15) {
-        themeClass = 'cold';
-    } else if (data.temperatura >= 28) {
-        themeClass = 'hot';
+    // Define o tema baseado na temperatura (Removendo o verde e dividindo entre frio e calor)
+    let themeClass;
+    if (data.temperatura <= 25) {
+        themeClass = 'cold'; // Azul
+    } else {
+        themeClass = 'hot'; // Vermelho
     }
 
     // Check if card already exists
