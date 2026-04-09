@@ -41,8 +41,7 @@ O sistema é dividido em duas partes principais que conversam ativamente atravé
 
 ## 3. Print da tela do sistema funcionando
 
-*(Aqui está o espaço no qual você deve anexar as imagens que evidenciarão o funcionamento.)*
 
 ![Print do Sistema](print_sistema.png)
 
-> **Nota para o aluno:** Para inserir a imagem para a entrega, tire um print screen do seu navegador com o sistema operando, salve a imagem na pasta raiz deste projeto com o nome `print_sistema.png`, sobrescrevendo/apagando se necessário. Se você renomear a imagem capturada, atualize o link no `README.md` acima.
+
